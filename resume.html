@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal portfolio - Resume">
+    <title>Erika Young • Resume</title>
+
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="bootstrap-5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container sticky-top pt-2">
+      <header class="sticky-top navbar-glass border-bottom rounded-4">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6 col-lg-3"></div>
+
+            <div class="col-lg-6">
+              <nav class="nav justify-content-center">
+                <a class="nav-link text-muted" href="index.html">Home</a>
+                <a class="nav-link text-muted" href="aboutme.html">About</a>
+                <a class="nav-link text-muted" href="projects.html">Projects</a>
+                <a class="nav-link text-dark fw-semibold" href="resume.html">Resume</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <main class="py-5">
+      <div class="container">
+
+        <!-- HEADER -->
+        <div class="text-center mb-5">
+          <h1 class="display-4 fw-bold gradient-text">Resume</h1>
+          <p class="text-muted mt-2">
+            View or download my resume below.
+          </p>
+        </div>
+
+        <!-- RESUME EMBED -->
+        <div class="glass p-3 p-md-4">
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="assets/resume.pdf"
+              title="Erika Young Resume"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="mt-5 pt-4 border-top">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="text-muted">© <span id="year"></span> Erika Young</div>
+            <div class="d-flex gap-3">
+            <a class="text-muted" href="index.html">Home</a>
+              <a class="text-muted" href="aboutme.html">About</a>
+              <a class="text-muted" href="projects.html">Projects</a>
+              <a class="text-muted" href="resume.html">Resume</a>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+
+    <script src="bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

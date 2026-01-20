@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal portfolio - About">
+    <title>Erika Young • About</title>
+
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="bootstrap-5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container sticky-top pt-2">
+      <header class="sticky-top navbar-glass border-bottom rounded-4">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6 col-lg-3">
+            </div>
+
+            <div class="col-lg-6">
+              <nav class="nav justify-content-center">
+                <a class="nav-link text-muted" href="index.html">Home</a>
+                <a class="nav-link text-dark fw-bold" href="aboutme.html">About</a>
+                <a class="nav-link text-muted" href="projects.html">Projects</a>
+                <a class="nav-link text-muted" href="resume.html">Resume</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <main class="py-5">
+      <div class="container">
+
+        <!-- TOP TITLE -->
+        <div class="text-center mb-5">
+          <p class="subtitle mb-2">Computer Science • Bioinformatics</p>
+          <h1 class="display-4 fw-bold mb-0 gradient-text">About Me</h1>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <!-- LEFT: ABOUT + SKILLS -->
+          <div class="col-12 col-lg-7">
+            <div class="glass p-4 p-md-5">
+              <p class="lead mb-4">
+                I'm a third-year Computer Science student at UC Irvine committed to making technology accessible
+                and efficient for everyone. I actively mentor younger students from local schools and share the
+                insights I’ve gained along the way.
+              </p>
+
+              <h2 class="h3 fw-bold mb-3">Skills</h2>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge chip">React</span>
+                <span class="badge chip">Python</span>
+                <span class="badge chip">C/C++</span>
+                <span class="badge chip">SQL</span>
+                <span class="badge chip">R</span>
+                <span class="badge chip">CSS</span>
+                <span class="badge chip">HTML</span>
+                <span class="badge chip">JavaScript</span>
+                <span class="badge chip">Java</span>
+                <span class="badge chip">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: HIGHLIGHTS -->
+          <div class="col-12 col-lg-5">
+            <div class="glass p-4 p-md-5">
+              <h2 class="h4 fw-semibold mb-4">Highlights</h2>
+
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="mini-card p-3">
+                    <div class="mini-label">GPA</div>
+                    <div class="fw-semibold">3.7</div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mini-card p-3">
+                    <div class="mini-label">Leadership</div>
+                    <div class="fw-semibold">WICS Outreach Co-Chair</div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mini-card p-3">
+                    <div class="mini-label">Specialization</div>
+                    <div class="fw-semibold">Bioinformatics</div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="mini-card p-3">
+                    <div class="mini-label">Current Role</div>
+                    <div class="fw-semibold">Junior Analyst @ Innopiphany</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-secondary btn-sm" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="btn btn-outline-secondary btn-sm" href="https://github.com/eriyoungg" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-outline-secondary btn-sm" href="mailto:erikasy@uci.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="mt-5 pt-4 border-top">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div class="text-muted">© <span id="year"></span> Erika Young</div>
+            <div class="d-flex gap-3">
+            <a class="text-muted" href="index.html">Home</a>
+              <a class="text-muted" href="aboutme.html">About</a>
+              <a class="text-muted" href="projects.html">Projects</a>
+              <a class="text-muted" href="resume.html">Resume</a>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+
+    <script src="bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

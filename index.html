@@ -1,24 +1,151 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="">
 
-<!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
--->
+    <title>Erika Young • Home</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
-</head>
-<body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
-</body>
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="bootstrap-5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
+    <!-- my CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+      .hero {
+        background:
+          radial-gradient(1100px circle at 15% 15%, rgba(255, 210, 225, 0.5), transparent 55%),
+          radial-gradient(1100px circle at 85% 20%, rgba(239, 201, 96, 0.5), transparent 55%),
+          #fff7f2;
+        color: #374151;
+      }
+      .hero .btn-primary {
+        background-color: #6366f1;
+        border-color: #6366f1;
+      }
+
+      .hero .btn-outline-light {
+        color: #374151;
+        border-color: #374151;
+      }
+      .hero a { text-decoration: none; }
+      .section-pad { padding: 4.5rem 0; }
+      .anchor-offset { scroll-margin-top: 90px; }
+      .project-thumb {
+        height: 160px;
+        border-radius: .75rem;
+        background: linear-gradient(135deg, rgba(13,110,253,.18), rgba(102,16,242,.18));
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="container sticky-top pt-2">
+      <header class="sticky-top navbar-glass border-bottom rounded-4">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6 col-lg-3">
+            </div>
+
+            <div class="col-lg-6">
+              <nav class="nav justify-content-center">
+                <a class="nav-link text-dark fw-bold" href="index.html">Home</a>
+                <a class="nav-link text-muted" href="aboutme.html">About</a>
+                <a class="nav-link text-muted" href="projects.html">Projects</a>
+                <a class="nav-link text-muted" href="resume.html">Resume</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <p class="text-muted mb-2">Computer Science • Bioinformatics</p>
+          <h1 class="display-4 fw-bold gradient-text">Hi, I'm Erika!</h1>
+        </div>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <div class="p-4 rounded-4 border border-white border-opacity-25 bg-white bg-opacity-10">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                     <img src="assets/headshot-copy.jpg" class="rounded-circle" width="64" height="64" style="object-fit: cover;" alt="Portrait of Erika Young">
+                <div>
+                  <div class="fw-semibold">Erika Young</div>
+                  <div class="text-muted-50 small">UCI • Class of 2027</div>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-3 glass">
+                    <div class="text-muted small">Location</div>
+                    <div class="fw-semibold">Irvine, CA</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 glass">
+                    <div class="text-muted-50 small">Incoming SWE at</div>
+                    <div class="fw-semibold">Esri</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="p-3 glass">
+                    <div class="text-muted-50 small mb-2">Links</div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <a class="btn btn-sm btn-outline-secondary" href="https://www.linkedin.com/in/erika-young-a193ab245/">LinkedIn</a>
+                      <a class="btn btn-sm btn-outline-secondary" href="https://github.com/eriyoungg">GitHub</a>
+                      <a class="btn btn-sm btn-outline-secondary" href="mailto:erikasy@uci.edu">Email</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <p class="padding-bottom"></p>
+            <h2 class="display-7 fw-bold">Start Here</h2>
+            <p class="padding-top"></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-outline-light btn-lg" href="aboutme.html">About Me</a>
+              <a class="btn btn-outline-light btn-lg" href="#projects">View Projects</a>
+              <a class="btn btn-outline-light btn-lg" href="#" aria-label="Resume">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-5 pt-4 border-top">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <div class="text-muted">© <span id="year"></span> Erika Young</div>
+          <div class="d-flex gap-3">
+            <a class="text-muted" href="index.html">Home</a>
+            <a class="text-muted" href="aboutme.html">About</a>
+            <a class="text-muted" href="projects.html">Projects</a>
+            <a class="text-muted" href="resume.html">Resume</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS (local) -->
+    <script src="bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

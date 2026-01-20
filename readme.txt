@@ -1,4 +1,4 @@
---Readme document for *Erika Young*, *erikasy@uci.edu*--
+--Readme document for Erika Young, erikasy@uci.edu--
 
 A reminder on academic integrity, as described in the syllabus.
 
